@@ -3,12 +3,12 @@
 Abra `index.html` ou `login/login.html` no navegador.
 
 ## Telas inclusas
-- **Login** (`/login/login.html`)
-- **Cadastro** (`/cadastro/cadastro.html`)
-- **Home/Dashboard** com popup de Resumo (`/home/home.html`)
-- **Área Pix** (`/pix/pix.html`) e **Comprovante** (`/pix/comprovante.html`)
-- **Perfil** (`/perfil/perfil.html`)
-- **Chatbot de Crédito** (`/credito/chat.html`)
+- **Login** (`/login/login.html`) Feito por Gustavo abdo
+- **Cadastro** (`/cadastro/cadastro.html`) Feito por Gustavo abdo
+- **Home/Dashboard** com popup de Resumo (`/home/home.html`) Feito por Robert Gonçalves 
+- **Área Pix** (`/pix/pix.html`) e **Comprovante** (`/pix/comprovante.html`) Feito por Robert Gonçalves 
+- **Perfil** (`/perfil/perfil.html`) Feito por Gustavo abdo
+- **Chatbot de Crédito** (`/credito/chat.html`) Feito por Robert Gonçalves 
 
 ## Integração com backend
 Edite `assets/js/api.js` e ajuste `API_BASE` para apontar ao seu Spring Boot.
