@@ -15,24 +15,62 @@
         <span class="text-2xl font-semibold tracking-wide">Consult Tech</span>
       </div>
     </div>
-    <h1 class="text-center text-2xl font-semibold mb-6">Abra sua conta PJ</h1>
+
+    <h1 class="text-center text-2xl font-semibold mb-4">Abra sua conta PJ</h1>
+
+    <!-- faixa de mensagens sem popup -->
+    <div id="msg" class="hidden mb-3 rounded-lg border px-3 py-2 text-sm"></div>
+
     <form id="formCadastro" class="grid grid-cols-1 md:grid-cols-2 gap-3" novalidate>
-      <div class="space-y-2"><input id="nome" placeholder="Nome" autocomplete="name" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400"></div>
-      <div class="space-y-2"><input id="idade" placeholder="Idade" inputmode="numeric" pattern="\d+" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400"></div>
-      <div class="md:col-span-2 space-y-2"><input id="empresa" placeholder="Empresa (Ex.: Hotel)" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400"></div>
-      <div class="md:col-span-2 space-y-2"><input id="cnpj" placeholder="CNPJ" inputmode="numeric" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400"></div>
-      <div class="md:col-span-2 space-y-2"><input id="email" type="email" placeholder="E-mail" autocomplete="email" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400"></div>
-      <div class="md:col-span-2 space-y-2"><input id="telefone" placeholder="Telefone" inputmode="tel" autocomplete="tel" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400"></div>
-      <div class="space-y-2"><input id="senha" type="password" placeholder="•••" minlength="6" autocomplete="new-password" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400"></div>
-      <div class="space-y-2"><input id="confirmar" type="password" placeholder="•••" minlength="6" autocomplete="new-password" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400"></div>
-      <div class="md:col-span-2 mt-2">
-        <button class="w-full bg-yellow-400 text-black font-medium rounded-lg py-2 hover:brightness-110 active:brightness-90">Criar Conta</button>
+      <div class="space-y-2">
+        <input id="nome" placeholder="Nome" autocomplete="name"
+               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400">
       </div>
+
+      <div class="space-y-2">
+        <input id="idade" placeholder="Idade" inputmode="numeric" pattern="\d+"
+               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400">
+      </div>
+
+      <div class="md:col-span-2 space-y-2">
+        <input id="empresa" placeholder="Empresa (Ex.: Hotel)"
+               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400">
+      </div>
+
+      <div class="md:col-span-2 space-y-2">
+        <input id="cnpj" placeholder="CNPJ" inputmode="numeric"
+               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400">
+      </div>
+
+      <div class="md:col-span-2 space-y-2">
+        <input id="email" type="email" placeholder="E-mail" autocomplete="email"
+               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400">
+      </div>
+
+      <!-- Senha e Confirmar senha lado a lado -->
+      <div class="space-y-2">
+        <input id="senha" type="password" placeholder="Senha" minlength="6" autocomplete="new-password"
+               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400">
+      </div>
+
+      <div class="space-y-2">
+        <input id="confirmar" type="password" placeholder="Confirmar senha" minlength="6" autocomplete="new-password"
+               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 outline-none focus:border-yellow-400">
+      </div>
+
+      <div class="md:col-span-2 mt-2">
+        <button class="w-full bg-yellow-400 text-black font-medium rounded-lg py-2 hover:brightness-110 active:brightness-90">
+          Criar Conta
+        </button>
+      </div>
+
       <p class="md:col-span-2 text-center text-sm text-slate-400 mt-1">
-        Já tem uma conta? <a href="/login/login.html" class="text-yellow-400 hover:underline">Faça login</a>
+        Já tem uma conta?
+        <a href="/login/login.html" class="text-yellow-400 hover:underline">Faça login</a>
       </p>
     </form>
   </main>
+
   <script type="module" src="/assets/js/utils.js"></script>
   <script type="module" src="./cadastro.js"></script>
 </body>
