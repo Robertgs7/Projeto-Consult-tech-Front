@@ -18,7 +18,6 @@
         <a href="/home/home.html" class="navlink active"><span class="icon">🏠</span> Início</a>
         <a href="/pix/pix.html" class="navlink"><span class="icon">✖️</span> Área Pix</a>
         <a href="/credito/chat.html" class="navlink"><span class="icon">💳</span> Crédito Inteligente</a>
-        <a href="/perfil/perfil.html" class="navlink"><span class="icon">👤</span> Perfil</a>
       </nav>
       <div class="mt-auto p-3">
         <button id="logout" class="w-full text-left navlink !text-slate-300 hover:!text-white">↪️ Sair</button>
@@ -26,9 +25,14 @@
     </aside>
 
     <main class="p-6 md:p-8">
-      <header class="mb-6">
-        <h1 class="text-3xl md:text-4xl font-semibold">Bem-vindo, <span id="userName">...</span>!</h1>
-        <p id="userCompany" class="text-slate-400">—</p>
+      <header class="mb-6 flex items-start justify-between">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-semibold">Bem-vindo, <span id="userName">...</span>!</h1>
+          <p id="userCompany" class="text-slate-400">—</p>
+        </div>
+        <a href="/perfil/perfil.html" class="perfil-btn" title="Perfil do Usuário">
+          <span class="text-2xl">👤</span>
+        </a>
       </header>
 
       <section class="grid lg:grid-cols-[1fr_360px] gap-6">
@@ -58,7 +62,50 @@
           </div>
         </div>
       </section>
+      
+      <section class="mt-6 bg-slate-900/80 border border-slate-800 rounded-2xl p-5">
+        <div class="flex items-center gap-2 mb-4">
+          <h2 class="text-slate-300 font-medium">Meus Investimentos</h2>
+          <span class="text-green-400">💰</span>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-5">
+          <div class="bg-slate-800/60 rounded-xl p-4 border border-slate-700">
+            <p class="text-sm text-slate-400 mb-2">Performance Total (Últimos 12 meses)</p>
+            <div class="flex items-end h-24 gap-1">
+              <div class="flex-1 bg-green-500/80 h-[20%] rounded-t-sm" title="Jan: +2.1%"></div>
+              <div class="flex-1 bg-green-500/80 h-[40%] rounded-t-sm" title="Fev: +4.2%"></div>
+              <div class="flex-1 bg-green-500/80 h-[30%] rounded-t-sm" title="Mar: +3.1%"></div>
+              <div class="flex-1 bg-yellow-500/80 h-[60%] rounded-t-sm" title="Abr: +6.5%"></div>
+              <div class="flex-1 bg-rose-500/80 h-[10%] rounded-t-sm" title="Mai: -1.0%"></div>
+              <div class="flex-1 bg-green-500/80 h-[75%] rounded-t-sm" title="Jun: +8.0%"></div>
+              <div class="flex-1 bg-green-500/80 h-[50%] rounded-t-sm" title="Jul: +5.0%"></div>
+              <div class="flex-1 bg-yellow-500/80 h-[45%] rounded-t-sm" title="Ago: +4.8%"></div>
+              <div class="flex-1 bg-green-500/80 h-[80%] rounded-t-sm" title="Set: +9.1%"></div>
+              <div class="flex-1 bg-green-500/80 h-[65%] rounded-t-sm" title="Out: +7.0%"></div>
+              <div class="flex-1 bg-yellow-500/80 h-[55%] rounded-t-sm" title="Nov: +5.5%"></div>
+              <div class="flex-1 bg-rose-500/80 h-[25%] rounded-t-sm" title="Dez: -2.5%"></div>
+            </div>
+            <p class="text-center text-sm mt-2 font-semibold text-green-400">Rendimento Acumulado: +49.6%</p>
+          </div>
 
+          <div class="bg-slate-800/60 rounded-xl p-4 border border-slate-700">
+            <p class="text-sm text-slate-400 mb-2">Distribuição da Carteira</p>
+            <div class="flex h-24 items-center justify-center gap-1">
+               <div class="w-1/4 h-12 bg-blue-500 rounded-lg text-xs flex items-center justify-center font-bold" title="Renda Fixa">25%</div>
+               <div class="w-1/2 h-16 bg-red-500 rounded-lg text-xs flex items-center justify-center font-bold" title="Ações">50%</div>
+               <div class="w-1/4 h-8 bg-yellow-500 rounded-lg text-xs flex items-center justify-center font-bold" title="Fundos">25%</div>
+            </div>
+            <div class="mt-4 text-xs text-center space-y-1">
+               <div class="flex justify-center items-center gap-2">
+                  <span class="w-3 h-3 bg-blue-500 rounded-full"></span> Renda Fixa
+                  <span class="w-3 h-3 bg-red-500 rounded-full"></span> Ações
+                  <span class="w-3 h-3 bg-yellow-500 rounded-full"></span> Fundos
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="mt-6 bg-slate-900/80 border border-slate-800 rounded-2xl p-5">
         <div class="flex items-center gap-2 mb-2">
           <h2 class="text-slate-300 font-medium">Novidades e Dicas</h2>
@@ -80,7 +127,6 @@
     </main>
   </div>
 
-  <!-- Modal Resumo -->
   <div id="resumoOverlay" class="overlay hidden">
     <div class="modal">
       <div class="modal-header">
